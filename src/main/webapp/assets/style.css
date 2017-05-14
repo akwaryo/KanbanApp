@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    font-family: 'Lato';
+}
+
+body {
+    background-color: #fdfdff;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    text-align: center;
+    position: relative;
+}
+
+.content {
+    width: 20em;
+    margin: 5em auto;
+}
+
+.spin {
+    animation-name: b;
+    animation-duration: 22s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes b {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.ease {
+    animation-name: a;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes a {
+    0% {
+        transform: translate(0);
+    }
+    60% {
+        transform: translateY(12px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+svg {
+    position: absolute;
+}
+
+.red-square {
+    top: 4%;
+    left: 25%;
+}
+
+.yellow-line {
+    top: 71%;
+    left: 30%;
+}
+
+.blue-square-big {
+    top: 20%;
+    right: 29%;
+}
+
+.blue-circle {
+    top: 70%;
+    right: 8%;
+}
+
+.green-rectangle-big {
+    top: 75%;
+    right: 25%;
+}
+
+.yellow-circle {
+    top: 62%;
+    left: 14%;
+}
+
+.green-line {
+    top: 23%;
+    left: 8%;
+}
+
+.red-line {
+    top: 14%;
+    right: 10%;
+}
+
+.blue-square {
+    top: 105%;
+    left: 12%;
+}
+
+.green-rectangle {
+    top: 90%;
+    left: 26%;
+}
+
+.yellow-triangle {
+    top: 100%;
+    right: 17%;
+}
+
+#logo {
+    width: 125px;
+    height: 125px;
+    padding-top: 1em;
+}
+
+h2 {
+    padding: 0.6em;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+#round-blue {
+    background-color: #4482ED;
+    color: #fff;
+    font-size: 18px;
+    padding: 0.8em 3em;
+    margin-top: 3em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
