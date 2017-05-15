@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Kanban App</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    </head>
+    <body style="background-image: url(assets/images/background.svg); max-height: 100%;">
+        <div class="app-head">
+            <div class="groups">
+                <div class="group">
+                    <p class="group-name">Card 1</p>
+                    <div class="group-item"></div>
+                </div>
+                <div class="group">
+                    <img id="plus-sign" src="assets/images/plus.svg" alt="">
+                    <p class="group-name">New Card</p>
+                </div>                
+            </div>
+            <div class="team">
+                <p>Team</p>
+                <div class="users">
+
+                </div>
+            </div>
+        </div>
+        <div class="tasklist">
+            <input type="text" id="myInput" placeholder="New Task...">
+            <span onclick="newElement()" class="addBtn">Adicionar</span>
+        </div>
+        <ul id="myUL">
+            <li>Hit the gym</li>
+            <li>Pay bills</li>
+            <li>Meet George</li>
+            <li>Buy eggs</li>
+            <li>Read a book</li>
+            <li>Organize office</li>
+        </ul>
+    </body>
+    <script type="text/javascript" src="assets/script.js"></script>
+</html>
