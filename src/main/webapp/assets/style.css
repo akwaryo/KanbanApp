@@ -216,35 +216,60 @@ input {
 
 .app-head {
     display: flex;
-    padding: 3em;
+    padding: 1em 3em;
 }
 
 .groups {
     display: flex;
-    width: 70%;
+    width: 77%;
 }
 
 .group {
     display: block;
     padding: 0 1em;
+    text-align: center;
 }
 
 .group-name {
-    font-size: 1.1em;
-    margin: 0 0 .4em;
+    color: #334562;
+    font-size: 1em;
+    margin: 0 0 .6em;
+    opacity: .7;
+
 }
 
 .group-item {
     background-color: #f8f8f8;
     border-radius: 5px;
-    width: 5em;
-    height: 7em;
+    width: 4em;
+    height: 6em;
 }
 
 #plus-sign {
     align-self: center;
     padding: 3em 1.6em .6em;
-    width: 30px;
+    width: 25px;
+}
+
+.tasks {
+    width: 70%;
+    margin: 2em 0 0 3em;
+}
+
+.users {
+    display: flex;
+}
+
+.users img {
+    width: 2em;
+    height: 2em;
+    padding: 1em .5em 0 0;
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
 }
 
 /*Tasklist*/
@@ -253,19 +278,10 @@ ul li {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
-    background: #eee;
+    border-bottom: 1px solid #e6e6e6;
+    background: #fff;
     font-size: 18px;
     transition: 0.2s;
-
-    /* make the list items unselectable */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-ul li:nth-child(odd) {
-    background: #f9f9f9;
 }
 
 ul li:hover {
@@ -275,7 +291,7 @@ ul li:hover {
 ul li.checked::before {
     content: '';
     position: absolute;
-    border-color: #fff;
+    border-color: #4CAF50;
     border-style: solid;
     border-width: 0 2px 2px 0;
     top: 10px;
@@ -297,11 +313,15 @@ ul li.checked::before {
     color: white;
 }
 
-input {
+#myInput {
     border: none;
-    width: 75%;
-    padding: 10px;
-    font-size: 16px;
+    border-bottom: 1px solid #e6e6e6;
+    border-radius: 4px 4px 0 0;
+    font-size: 1em;
+    margin: 0;
+    padding: .7em 0;
+    text-indent: 40px;
+    width: 100%;   
 }
 
 .addBtn {

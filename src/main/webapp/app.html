@@ -7,11 +7,15 @@
         <link rel="stylesheet" href="assets/style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     </head>
-    <body style="background-image: url(assets/images/background.svg); max-height: 100%;">
+    <body style="background-color: #D5DDE6;">
         <div class="app-head">
             <div class="groups">
                 <div class="group">
-                    <p class="group-name">Card 1</p>
+                    <p class="group-name">Backlog</p>
+                    <div class="group-item"></div>
+                </div>
+                <div class="group">
+                    <p class="group-name">Review</p>
                     <div class="group-item"></div>
                 </div>
                 <div class="group">
@@ -20,24 +24,23 @@
                 </div>                
             </div>
             <div class="team">
-                <p>Team</p>
+                <p class="group-name">Team</p>
                 <div class="users">
-
+                    <img src="assets/images/user-girl.svg" alt="">
+                    <img src="assets/images/user-man.svg" alt="">
+                    <img src="assets/images/user-tie.svg" alt="">
+                    <img src="assets/images/user-woman.svg" alt="">
+                    <img id="" src="assets/images/plus.svg" alt="">
                 </div>
             </div>
         </div>
-        <div class="tasklist">
-            <input type="text" id="myInput" placeholder="New Task...">
-            <span onclick="newElement()" class="addBtn">Adicionar</span>
+        <div class="tasks">
+            <input type="text" id="myInput" placeholder="New Task..." onkeyup="if (event.keyCode == 13)document.getElementById('btnAdd').click()">
+            <input id="btnAdd" type="submit" onclick="newElement()" style="display: none;">
+            <ul id="myUL">
+                <li>Fazer modelagem</li>
+            </ul>
         </div>
-        <ul id="myUL">
-            <li>Hit the gym</li>
-            <li>Pay bills</li>
-            <li>Meet George</li>
-            <li>Buy eggs</li>
-            <li>Read a book</li>
-            <li>Organize office</li>
-        </ul>
     </body>
     <script type="text/javascript" src="assets/script.js"></script>
 </html>

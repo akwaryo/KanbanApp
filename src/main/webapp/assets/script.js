@@ -1,33 +1,31 @@
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
+// Criando um botão de deletar e associando a cada elemento
+var myNodelist = document.getElementsByTagName("li");
+for (var i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("span");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
+// Clicando no botão de deletar para esconder o item
 var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
+for (var i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
     div.style.display = "none";
   }
 }
 
-// Add a "checked" symbol when clicking on a list item
+// Adicionando um ícone de check quando clicar em um elemento
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
+  if (ev.target.tagName === 'li') {
     ev.target.classList.toggle('checked');
   }
 }, false);
 
-// Create a new list item when clicking on the "Add" button
+// Adicionando novos elementos quando pressionado Enter
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
