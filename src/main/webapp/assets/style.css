@@ -8,15 +8,15 @@ html, body {
 }
 
 .wrapper {
+    background-color: #fdfdff;
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    background-color: #fdfdff;
 }
 
 .main {
-    text-align: center;
     position: relative;
+    text-align: center;
 }
 
 .content {
@@ -141,13 +141,73 @@ h2 {
     cursor: pointer;
 }
 
-/*Estilos da Página Login*/
+/*Estilos da Página Registrar*/
 
 .card {
-    background-color: #fdfdff;
-    width: 20em;
-    height: 80%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    width: 70%;
     margin: 2em auto;
+    border-radius: 2px;
     text-align: center;
-    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#login-bg {
+    padding: 3em;
+    width: 45%;
+}
+
+#login-logo {
+    width: 70px;
+    filter: drop-shadow(0 8px 12px rgba(68, 130, 237,.4));
+    margin: 1em 0.3em;
+}
+
+#login-form {
+    padding: 2em 2em;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 1.8em;
+}
+
+label {
+    color: #777;
+    font-size: .7em;
+    font-weight: bold;
+    padding-left: 3em;
+    display: block;
+    text-align: left;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 1.1em;
+    margin: 0 0 2em 0;
+    width: 80%;
+    height: 25px;
+    text-indent: 10px;
+}
+
+#button-registrar {
+    background-color: #4482ED;
+    background-image: linear-gradient(to right, #539BCB, #4582EC);
+    border: none;
+    border-radius: 26px;
+    font-weight: bold;
+    font-size: .74em;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 12px 55px;
+}
+
+#login-text {
+    color: #666;
+    font-size: .9em;
+    padding: 1em 0;
+    
 }
