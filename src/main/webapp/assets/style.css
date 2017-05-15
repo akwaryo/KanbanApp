@@ -1,16 +1,17 @@
 * {
     margin: 0;
-    font-family: 'Lato';
 }
 
-body {
-    background-color: #fdfdff;
+html, body {
+    font-family: 'Lato';
+    height: 100%;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    background-color: #fdfdff;
 }
 
 .main {
@@ -41,7 +42,7 @@ body {
 
 .ease {
     animation-name: a;
-    animation-duration: 10s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
@@ -138,4 +139,15 @@ h2 {
     border: none;
     border-radius: 8px;
     cursor: pointer;
+}
+
+/*Estilos da Página Login*/
+
+.card {
+    background-color: #fdfdff;
+    width: 20em;
+    height: 80%;
+    margin: 2em auto;
+    text-align: center;
+    border-radius: 4px;
 }
