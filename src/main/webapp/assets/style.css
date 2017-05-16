@@ -7,6 +7,8 @@ html, body {
     height: 100%;
 }
 
+/*Estilos página inicial*/
+
 .wrapper {
     background-color: #fdfdff;
     display: flex;
@@ -20,9 +22,33 @@ html, body {
 }
 
 .content {
-    width: 20em;
     margin: 5em auto;
+    width: 20em;    
 }
+
+#logo {
+    padding-top: 1em;
+    width: 125px;    
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 0.6em;    
+}
+
+#btn-round-blue {
+    background-color: #4482ED;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 3em;
+    padding: 0.8em 3em;
+}
+
+/*SVG e Animações*/
 
 .spin {
     animation-name: b;
@@ -118,30 +144,7 @@ svg {
     right: 17%;
 }
 
-#logo {
-    width: 125px;
-    height: 125px;
-    padding-top: 1em;
-}
-
-h2 {
-    padding: 0.6em;
-    font-size: 1.2em;
-    font-weight: 400;
-}
-
-#round-blue {
-    background-color: #4482ED;
-    color: #fff;
-    font-size: 18px;
-    padding: 0.8em 3em;
-    margin-top: 3em;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-/*Estilos da Página Registrar*/
+/*Estilos das Páginas Registrar e Login*/
 
 .card {
     align-items: center;
@@ -160,14 +163,14 @@ h2 {
     width: 45%;
 }
 
+#login-form {
+    padding: 2em 2em;
+}
+
 #login-logo {
     filter: drop-shadow(0 8px 12px rgba(68, 130, 237,.4));
     margin: 1em 0.3em;
     width: 70px;
-}
-
-#login-form {
-    padding: 2em 2em;
 }
 
 p {
@@ -194,7 +197,11 @@ input {
     width: 80%;
 }
 
-#button-registrar {
+input:focus {
+    outline: none;
+}
+
+#btn-registrar {
     background-color: #4482ED;
     background-image: linear-gradient(to right, #539BCB, #4582EC);
     border: none;
@@ -212,7 +219,7 @@ input {
     padding: 1.4em 0;
 }
 
-/*Estilos App*/
+/*Estilos da página do App*/
 
 .app-head {
     display: flex;
@@ -241,19 +248,14 @@ input {
 .group-item {
     background-color: #f8f8f8;
     border-radius: 5px;
-    width: 4em;
     height: 6em;
+    width: 4em;
 }
 
 #plus-sign {
     align-self: center;
     padding: 3em 1.6em .6em;
     width: 25px;
-}
-
-.tasks {
-    width: 70%;
-    margin: 2em 0 0 3em;
 }
 
 .users {
@@ -266,39 +268,47 @@ input {
     padding: 1em .5em 0 0;
 }
 
-#myUL {
+#plus-team {
+    width: 25px;
+}
+
+/*Estilos da tasklist*/
+
+.tasks {
+    width: 70%;
+    margin: 2em 0 0 3em;
+}
+
+#task-input {
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+    border-radius: 4px 4px 0 0;
+    font-size: 1em;
+    margin: 0;
+    padding: .7em 0;
+    text-indent: 40px;
+    width: 100%;   
+}
+
+#ul-task {
     list-style-type: none;
     padding: 0;
     width: 100%;
 }
 
-/*Tasklist*/
-
 ul li {
-    cursor: pointer;
-    position: relative;
-    padding: 12px 8px 12px 40px;
-    border-bottom: 1px solid #e6e6e6;
     background: #fff;
-    font-size: 18px;
+    border-bottom: 1px solid #e6e6e6;
+    color: #777;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 8px 12px 40px;
+    position: relative;
     transition: 0.2s;
 }
 
 ul li:hover {
-    background: #ddd;
-}
-
-ul li.checked::before {
-    content: '';
-    position: absolute;
-    border-color: #4CAF50;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
+    background: #f2f2f2;
 }
 
 .close {
@@ -311,30 +321,4 @@ ul li.checked::before {
 .close:hover {
     background-color: #f44336;
     color: white;
-}
-
-#myInput {
-    border: none;
-    border-bottom: 1px solid #e6e6e6;
-    border-radius: 4px 4px 0 0;
-    font-size: 1em;
-    margin: 0;
-    padding: .7em 0;
-    text-indent: 40px;
-    width: 100%;   
-}
-
-.addBtn {
-    padding: 10px;
-    width: 20%;
-    background: #d9d9d9;
-    color: #555;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.addBtn:hover {
-    background-color: #bbb;
 }

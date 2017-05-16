@@ -17,14 +17,6 @@ for (var i = 0; i < close.length; i++) {
   }
 }
 
-// Adicionando um ícone de check quando clicar em um elemento
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'li') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
-
 // Adicionando novos elementos quando pressionado Enter
 function newElement() {
   var li = document.createElement("li");
